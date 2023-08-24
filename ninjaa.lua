@@ -110,7 +110,7 @@ for i, v in pairs(game:GetService("Workspace").BillboardGuis:GetChildren()) do
 					getgenv().autofight = Value
 					while autofight == true do
 						game:GetService("ReplicatedStorage").Remotes.FightOver:FireServer(area, i)
-						wait(3)
+						wait(0.00001)
 					end
 				end
 			})
